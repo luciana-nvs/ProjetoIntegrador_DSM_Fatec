@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>cadastre-se</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="/Imagens/logomini.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js" type="text/javascript"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js" type="text/javascript"></script>
+
+
+</head>
+
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/Home/index.html">
+        <img src="/Imagens/logomini.png" alt="Logo" width="90">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Home/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Login/index.html">Login</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/Quiz/index.html">Questionário de Perfume</a></li>
+              <li><a class="dropdown-item" href="/PerfumeCalc/index.html">Calculadora de Perfume</a></li>
+              <li><a class="dropdown-item" href="/Search/index.html">Pesquisa de Perfume</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sobre/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/FaleConosco/faConosco.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+<div class="cadastro">
+  <div class="box">
+    <form action="">
+      <fieldset>
+        <legend><b>Cadastro</b></legend>
+        <br>
+  
+        <div class="inputBox">
+          <input type="text" name="nome" id="nome" class="inputUser" required>
+          <label for="nome" class="labelinput">Nome Completo</label>
+        </div>
+        <br><br>
+  
+        <div class="inputBox">
+          <input type="email" name="email" id="email" class="inputUser" required>
+          <label for="email" class="labelinput">Email</label>
+        </div>
+        <br><br>
+  
+        <div class="inputBox">
+          <input type="password" name="senha" id="senha" class="inputUser" required>
+          <label for="senha" class="labelinput">Senha</label>
+        </div>
+        <br><br>
+  
+        <div class="inputBox">
+          <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+          <label for="telefone" class="labelinput">Telefone</label>
+        </div>
+        <br>
+  
+        <p>Sexo:</p>
+        <input type="radio" id="feminino" name="genero" value="feminino" required>
+        <label for="feminino">Feminino</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label>
+        <br><br>
+  
+        <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+        <input type="date" name="data_nascimento" id="data_nascimento" required>
+        <br><br>
+  
+        <div class="inputBox inline">
+          <input type="text" name="endereco" id="endereco" class="inputUser" required>
+          <label for="endereco" class="labelinput">Endereço</label>
+        </div>
+        <br><br>
+  
+        <div class="inputBox">
+          <input type="text" name="cep" id="cep" class="inputUser" required>
+          <label for="cep" class="labelinput">CEP</label>
+        </div>
+        <br><br>
+  
+        <input type="submit" name="submit" id="submit">
+      </fieldset>
+    </div> 
+  </form>
+</div>
+        
+
+     
+<div id="cadastroSucessoPopup" class="popup">
+  <div class="popup-content">
+    <p class="success-message">Cadastro realizado com sucesso!</p>
+    <button onclick="fecharPopup()">Fechar</button>
+  </div>
+</div>
+
+        <footer class="bg-light text-center text-lg-start">
+          <div class="text-center p-3" style="background-color: rgb(14, 127, 44); color: white;">
+            © 2023 Copyright:Data SW.
+        </footer>
+        
+  
+
+
+<script src="cadscript.js"></script>
+
+</body>
+</html>

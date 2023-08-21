@@ -1,0 +1,9 @@
+# Ignore specific files
+cadscript.js
+logscript.js
+pc.tx
+package.json
+
+# Ignore specific directories
+.config/
+.vscode/

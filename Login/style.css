@@ -1,0 +1,183 @@
+ 
+
+ul{
+	list-style: none;
+
+}
+
+nav{ background-color:rgb(252, 255, 252);
+    font-size: 20px;
+    height: 60px;
+    border-style: none;
+    
+}
+
+     
+  
+a{
+  font-family: 'playfair';
+	text-decoration: none;
+	color: #000;
+	display: block;
+	padding: 10px 5px;
+  text-align:justify;
+}
+
+.container {
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+
+}
+
+
+
+.card {
+  background-color: #ffffff90;
+  padding: 20px; 
+  border-radius: 3%;
+  box-shadow: 3px 3px 1px 0px #00000060;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  height: 60px 
+}
+
+
+h1 {
+
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000
+
+}
+
+
+
+.label-float input {
+
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+
+
+
+}
+
+
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+
+
+.label-float input:focus {
+  border-bottom: 2px solid #000000;
+
+}
+
+
+
+.label-float label {
+  color: #000000; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+
+}
+
+
+
+.label-float input:focus+label,
+
+.label-float input:valid+label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #000000
+
+}
+
+
+
+button {
+  background-color: transparent;
+  border-color: #000000;
+  border-style: solid;
+  color: #000000;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+
+button:hover {
+  background-color: #086008;
+  color: #fff;
+
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+
+}
+
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+
+}
+
+.cadastrando {
+  text-align: center;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.cadastrando a {
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+}
+
+
+.fa-eye {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #000000;
+
+}
+
+ #msgError{
+  text-align: center;
+  color: #000000;
+  background-color: rgb(21, 96, 71);
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}

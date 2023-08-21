@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataSW</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="./Logodois.PNG">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/Imagens/logomini.png" alt="Logo" width="90">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Home/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Login/index.html">Login</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/Quiz/index.html">Questionário de Perfume</a></li>
+              <li><a class="dropdown-item" href="/PerfumeCalc/index.html">Calculadora de Perfume</a></li>
+              <li><a class="dropdown-item" href="/Search/index.html">Pesquisa de Perfume</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sobre/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/FaleConosco/faConosco.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   
+  <main>
+    <div class="container col-xxl-6 px-0 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-3 py-7">
+        <div class="col-3 col-sm-3 col-lg-5 image-container">
+          <img src="https://st2.depositphotos.com/9648566/42001/i/600/depositphotos_420014288-stock-photo-bottle-perfume-flower-on-a.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+        </div>
+        <div class="col-lg-7 text-with-image">
+          <h1 class="display-4 fw-semibold lh-4 mb-4 custom-font-size">Perfis Olfativos Redefinidos pelo Digital</h1>
+          <p class="lead">Descubra seu perfil aromático único e encontre os perfumes perfeitos para expressar sua essência.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <a href="/Login/index.html" class="btn btn-success btn-lg px-3 me-md-2">Login</a>
+            <a href="/Cad/index.html" class="btn btn-warning btn-lg px-4">Cadastre-se</a>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </main>
+  
+
+    
+<section  class="servicos">
+
+  <h3>Serviços</h3>
+  <div style="display: flex; justify-content: center; ">
+    <div class="card" style="width: 20rem; margin: 15px; text-align: center;">
+      <img src="https://auriaperfumes.com/wp-content/uploads/2023/02/INGREDIENTES-DE-PERFUME.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Questionário de Perfil Olfativo</h5>
+        <p class="card-text">Responda ao nosso questionário sobre suas preferências olfativas e descubra seu perfil único de fragrâncias.</p>
+        <div class="d-grid">
+          <a href="/Quiz/index.html" class="btn btn-success">Iniciar Questionário</a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 20rem; margin: 15px; text-align: center;">
+      <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pesquisar Perfume</h5>
+        <p class="card-text">Descubra detalhes completos sobre os perfumes que você adora ou está interessado em conhecer.
+        <div class="d-grid">
+          <a href="/Search/index.html" class="btn btn-success">Explorar Pesquisa
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="width: 20rem; margin: 15px; text-align: center;">
+      <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Calculadora de Duração</h5>
+        <p class="card-text">Saiba quanto tempo seu frasco de perfume favorito vai durar com nossa calculadora de duração do frasco do perfume.</p>
+        <div class="d-grid">
+          <a href="/PerfumeCalc/index.html" class="btn btn-success">Calcular Agora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+</section>
+
+
+<footer class="bg-light text-center text-lg-start">
+  <div class="text-center p-3" style="background-color: rgb(14, 127, 44); color: white;">
+    © 2023 Copyright: Data SW.
+</footer>
+
+</body>
+
+</html>

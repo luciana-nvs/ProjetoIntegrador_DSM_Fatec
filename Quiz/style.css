@@ -1,0 +1,125 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+ul{
+	list-style: none;
+
+}
+ /* fundo menu */ 
+nav{ background-color:rgb(252, 255, 252);
+    font-size: 20px;
+    height: 60px;
+    border-style: none;
+    
+    
+    
+}
+
+    
+a{
+  font-family: 'playfair';
+	text-decoration: none;
+	color: #000;
+	display: block;
+	padding: 10px 5px;
+  text-align:justify;
+}
+
+.quiz-container {
+  box-shadow: 1px 1px 1px 1px rgba(0.2, 0, 0, 0.2);
+  text-shadow: 1px 1px white;
+  padding: 35px;
+  border-radius: 3%;
+  text-shadow: 1px #00000010;
+  width: 60%;
+  margin-top: 60px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(360deg, transparent, #ffffff);
+ 
+}
+
+.title {
+  margin-bottom: 5px;
+  color: #033c139c;
+  font-size: 20px;  
+  font-weight: 500;
+  text-transform: uppercase;
+  
+}
+.question {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size:17px;
+ 
+}
+.option {
+  padding: 5px;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.1);
+  width: 80%;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: aqua;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+.option:hover {
+  background: rgb(255, 252, 252);
+}
+.option input:checked .option {
+  background: #038c15;
+  color: #000;
+}
+.controls > * {
+  margin: 1rem;
+}
+
+
+
+.result {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+.final-score {
+  color: #00000099;
+}
+.summary {
+  text-shadow: 1px 1px #ffffff50;
+  color: #00000099;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+ 
+
+}
+.summary p {
+  align-self: center;
+  font-size: 20px;
+}
+.summary h1 {
+margin-top: 30px;
+  align-self: center;
+  font-size: 25px;
+}
+
+
+  
+

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pesquisa</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+ 
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="/Imagens/logomini.png" alt="Logo" width="90">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Home/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Login/index.html">Login</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/Quiz/index.html">Questionário de Perfume</a></li>
+              <li><a class="dropdown-item" href="/PerfumeCalc/index.html">Calculadora de Perfume</a></li>
+              <li><a class="dropdown-item" href="/Search/index.html">Pesquisa de Perfume</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sobre/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/FaleConosco/faConosco.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="header">
+    <div class="pesquisa">
+      <table class="table table-borderless"></table>
+    </div>
+    <h1>Encontre todas as suas informações que precisa em um só lugar!</h1>
+    <b>Pesquise por Perfume, Marca, Gênero ou Familia Olfativa:
+      <input id="gfg" type="text" placeholder="Pesquisar: ">
+    </b>
+    <br>
+    <br>
+    
+    <div id="searchResults">
+      <table class="table" id="searchResultsTable">
+          <tr>
+            <th></th>
+            <th>Perfume</th>
+            <th>Marca</th>
+            <th>Familia olfativa</th>
+            <th>Ano</th>
+            <th>Preço Médio</th>
+          </tr>
+          <tbody id="geeks">
+            <tr>
+              <td><img
+                  src="https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dwa61a29a5/images/hi-res-BR/ysl_libre_30ml.jpg?sw=556&sh=680&sm=fit"
+                  class="test"> </td>
+              <td>Libre</td>
+              <td> Yves Saint Laurent</td>
+              <td>Âmbar Fougére </td>
+              <td>2019</td>
+              <td>R$509,00 </td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dwd173444d/images/hi-res-BR/black_opium_edp_50ml_etui_1500px.jpg?sw=556&sh=680&sm=fit"
+                  class="test"></td>
+              <td>Black Opium</td>
+              <td>Yves Saint Laurent
+              </td>
+              <td>Âmbar Baunilha </td>
+              <td>2014</td>
+              <td>R$419,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://fraguru.com/mdimg/perfume/375x500.54275.jpg" class="test"></td>
+              <td>Scandal A Paris</td>
+              <td>Jean Paul Gaultier
+              </td>
+              <td>Chipre Floral</td>
+              <td>2019</td>
+              <td>R$519,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://cdn.awsli.com.br/278/278816/arquivos/Jean_Paul_Gaultier-Classique.jpg" class="test">
+              </td>
+              <td>Classique</td>
+              <td>Jean Paul Gaultier
+              </td>
+              <td>Âmbar Floral</td>
+              <td>1993</td>
+              <td>R$519,00 </td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://static.netshoes.com.br/produtos/perfume-feminino-good-girl-carolina-herrera-eau-de-parfum-30ml/60/L73-0065-460/L73-0065-460_zoom1.jpg?ts=1664502978&ims=544x"
+                  class="test"></td>
+              <td>Good Girl</td>
+              <td>Carolina Herrera</td>
+              <td>Âmbar Floral</td>
+              <td>2016</td>
+              <td>R$469,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://images.tcdn.com.br/img/img_prod/880007/perfume_ch_50ml_carolina_herrera_feminino_eau_de_toilette_625_1_2a43c5156f900e6a9e187a6a4ab73545.jpg"
+                  class="test"></td>
+              <td>CH</td>
+              <td>Carolina Herrera</td>
+              <td>Âmbar Floral</td>
+              <td>2007</td>
+              <td>R$619,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://www.drogariaminasbrasil.com.br/media/product/b60/eau-de-parfum-carolina-herrera-212-vip-rose-80ml-206.jpg"
+                  class="test"></td>
+              <td>212 VIP Rosé</td>
+              <td>Carolina Herrera</td>
+              <td>Floral Frutado</td>
+              <td>2014</td>
+              <td>R$459,00</td>
+            </tr>
+            <tr>
+              <td><a href="Perfume/212/index (copy).html" title="212"><img
+                    src="https://imgs.extra.com.br/1532501731/1xg.jpg?imwidth=500" class="test"></a></td>
+              <td>212</td>
+              <td>Carolina Herrera</td>
+              <td>Floral Amadeirado Almiscarado</td>
+              <td>1997</td>
+              <td>R$499,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://img.lojasrenner.com.br/item/500891161/large/8.jpg" class="test"></td>
+              <td>J'adore</td>
+              <td>Dior</td>
+              <td>Floral Frutado</td>
+              <td>1999</td>
+              <td>R$629,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://m.media-amazon.com/images/I/51+rKR6sEzL._AC_SL1000_.jpg" class="test"></td>
+              <td>La Vie Est Belle</td>
+              <td>Lancôme
+              </td>
+              <td>Floral Frutado Gustativo</td>
+              <td>2012</td>
+              <td>R$369,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://epocacosmeticos.vteximg.com.br/arquivos/ids/351976-500-500/Idole-Lancome---Perfume-Feminino-Eau-de-Parfum-30ml.jpg?v=637021687731570000"class="test"></td>
+              <td>Idôle</td>
+              <td>Lancôme
+              </td>
+              <td>Chipre Floral</td>
+              <td>2019</td>
+              <td>R$439,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://m.media-amazon.com/images/I/51AhfkQNkIL._AC_SY355_.jpg" class="test"></td>
+              <td>L'Interdit</td>
+              <td>Givenchy</td>
+              <td>Floral Aldeídico</td>
+              <td>1957</td>
+              <td>R$399,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://fraguru.com/mdimg/perfume/375x500.701.jpg" class="test"></td>
+              <td>Ange ou Demon</td>
+              <td>Givenchy</td>
+              <td>Âmbar Floral</td>
+              <td>2006</td>
+              <td>R$549,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://m.media-amazon.com/images/I/51VB6mR8+3L._AC_SL1080_.jpg" class="test"></td>
+              <td>Coco Mademoiselle</td>
+              <td>Chanel</td>
+              <td>Âmbar Floral</td>
+              <td>2001</td>
+              <td>R$799,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://cf.shopee.com.br/file/acbb01ef25242b331fefea180201c83a" class="test"></td>
+              <td>Floratta Red</td>
+              <td>O Boticário</td>
+              <td>Âmbar Floral</td>
+              <td>2019</td>
+              <td>R$129,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://cf.shopee.com.br/file/ecd1ebf3635d24b5255e9910dd198587" class="test"></td>
+              <td>Pacha Ibiza Diva</td>
+              <td>Pacha Ibiza</td>
+              <td>Âmbar Floral</td>
+              <td>2013</td>
+              <td>R$129,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://m.media-amazon.com/images/I/51vwXEvN7eL._AC_SX425_.jpg" class="test"></td>
+              <td>Flower by Kenzo</td>
+              <td>Kenzo</td>
+              <td>Âmbar Floral</td>
+              <td>2000</td>
+              <td>R$399,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://m.media-amazon.com/images/I/41z+VmFu1jL._AC_SY355_.jpg" class="test"></td>
+              <td>Euphoria</td>
+              <td>Calvin Klein</td>
+              <td>Âmbar Floral</td>
+              <td>2005</td>
+              <td>R$299,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://epocacosmeticos.vteximg.com.br/arquivos/ids/350159-320-320/La-Petite-Robe-Noire-Guerlain---Perfume-Feminino-Eau-de-Toilette.jpg?v=637009555250230000"
+                  class="test"></td>
+              <td>La Petite Robe Noire</td>
+              <td>Guerlain</td>
+              <td>Âmbar Baunilha</td>
+              <td>2012</td>
+              <td>R$299,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://img.lojasrenner.com.br/item/544924720/large/2.jpg" class="test"></td>
+              <td>Woman by Ralph Lauren</td>
+              <td>Ralph Lauren</td>
+              <td>Floral</td>
+              <td>2017</td>
+              <td>R$449,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://img.lojasrenner.com.br/item/547688970/large/2.jpg" class="test"></td>
+              <td>Light Blue</td>
+              <td>Dolce&Gabbana</td>
+              <td>Floral Frutado</td>
+              <td>2001</td>
+              <td>R$409,00</td>
+            </tr>
+            <tr>
+              <td> <a href="/Search/Perfume/Midnight/index.html" title="Midnight"><img
+                    src="https://m.media-amazon.com/images/I/818nOhXIDmL._AC_SY355_.jpg" class="test"></a></td>
+              <td>Midnight Fantasy</td>
+              <td>Britney Spears</td>
+              <td>Floral Frutado</td>
+              <td>2006</td>
+              <td>R$239,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://fraguru.com/mdimg/perfume/375x500.14917.jpg" class="test"></td>
+              <td>Lady Million Eau de Toilette</td>
+              <td>Paco Rabanne</td>
+              <td>Floral Amadeirado Almiscarado</td>
+              <td>2012</td>
+              <td>R$459,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://a-static.mlcdn.com.br/1500x1500/perfume-eau-de-parfum-75ml-eudora-edp-roxo/cfrcosmeticoseireli/8920665335/1ae569588b6cddaaf40a551786bd9f12.jpg"
+                  class="test"></td>
+              <td>Eudora Eau de Parfum</td>
+              <td>Eudora</td>
+              <td>Chipre Amadeirado</td>
+              <td>2011</td>
+              <td>R$189,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://epocacosmeticos.vteximg.com.br/arquivos/ids/196778-500-500/ch-men-prive-carolina-herrera-eau-de-toilette-perfume-masculino.jpg?v=635791190996570000"
+                  class="test"></td>
+              <td>CH Men Prive</td>
+              <td>Carolina Herrera</td>
+              <td>Couro</td>
+              <td>2015</td>
+              <td>R$399,00</td>
+            </tr>
+            <tr>
+              <td><a href="/Search/Perfume/212/index.html"></a><img
+                  src="https://a-static.mlcdn.com.br/450x450/212-vip-black-carolina-herrera-perfume-masculino-eau-de-parfum/epocacosmeticos-integra/28333/5e5d75e371f05ebd2309612413ed7d29.jpeg"
+                  class="test"></td>
+              <td>212 VIP Black</td>
+              <td>Carolina Herrera</td>
+              <td>Aromático Fougére </td>
+              <td>2017</td>
+              <td>R$699,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://m.media-amazon.com/images/I/61Yqmmip7DL._AC_SX569_.jpg" class="test"></td>
+              <td>212 Men</td>
+              <td>Carolina Herrera</td>
+              <td>Amadeirado Floral Almiscarado</td>
+              <td>1999</td>
+              <td>R$399,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://m.media-amazon.com/images/I/41eRnQ0ouAL._AC_SY355_.jpg" class="test"></td>
+              <td>Azzaro pour Homme</td>
+              <td>Azzaro</td>
+              <td>Aromático Fougére</td>
+              <td>1978</td>
+              <td>R$289,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://epocacosmeticos.vteximg.com.br/arquivos/ids/483648-500-500/invictus-platinum-paco-rabanne-perfume-masculino-eau-de-parfum--2-.jpg?v=637853975439270000"
+                  class="test"></td>
+              <td>Invictus</td>
+              <td>Paco Rabanne
+              </td>
+              <td>Aquático Amadeirado</td>
+              <td>2013</td>
+              <td>R$419,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://img.lojasrenner.com.br/item/546594103/large/1.jpg" class="test"></td>
+              <td>1 Million</td>
+              <td>Paco Rabanne
+              </td>
+              <td>Amadeirado Especiado</td>
+              <td>2008</td>
+              <td>R$449,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://images-americanas.b2w.io/produtos/7329672/imagens/perfume-issey-miyake-l-eau-d-issey-pour-homme-edt-masculino/304164_1_large.jpg"
+                  class="test"></td>
+              <td>L'Eau D'Issey Pour Homme EDT</td>
+              <td>Issey Miyake</td>
+              <td>Aquático e Amadeirado</td>
+              <td>2010</td>
+              <td>R$379,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dw04355b71/images/hi-res-BR/polo-green-pack.jpg?sw=556&sh=680&sm=fit"
+                  class="test"></td>
+              <td>Polo</td>
+              <td>Ralph Lauren</td>
+              <td>Chipre Amadeirado</td>
+              <td>1978</td>
+              <td>R$229,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://images-americanas.b2w.io/produtos/01/00/item/340/4/340445G1.jpg" class="test"></td>
+              <td>UdV</td>
+              <td>Urlic de Varens</td>
+              <td>Cítrico </td>
+              <td>1993</td>
+              <td>R$119,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://epocacosmeticos.vteximg.com.br/arquivos/ids/403640-320-320/ck-one-eau-de-toilette-calvin-klein-perfume-unissex-50ml--1-.jpg?v=637363122430900000"
+                  class="test"></td>
+              <td>CK One</td>
+              <td>Calvin Klein</td>
+              <td>Cítrico Aromático</td>
+              <td>1994</td>
+              <td>R$199,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://fraguru.com/mdimg/perfume/375x500.62762.jpg" class="test"></td>
+              <td>Eros</td>
+              <td>Versace</td>
+              <td>Aromático Fougére </td>
+              <td>2012</td>
+              <td>R$369,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://img.lojasrenner.com.br/item/508913791/large/10.jpg" class="test"></td>
+              <td>Ferrari Black</td>
+              <td>Ferrari</td>
+              <td>Aromático Fougére</td>
+              <td>1999</td>
+              <td>R$149,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://img.lojasrenner.com.br/item/539110289/zoom/1.jpg" class="test"></td>
+              <td>Sauvage</td>
+              <td>Dior</td>
+              <td>Aromático Fougére</td>
+              <td>2015</td>
+              <td>R$619,00</td>
+            </tr>
+            <tr>
+              <td><a href="/Search/Perfume/The One for Men/index.html"><img
+                  src="https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dw5eaf2a3b/images/hi-res-BR/3423473021209.1.jpg?sw=556&sh=680&sm=fit"
+                  class="test"></a></td>
+              <td>The One for Men</td>
+              <td>Dolce&Gabbana</td>
+              <td>Amadeirado Especiado</td>
+              <td>2008</td>
+              <td>R$469,00</td>
+          </tr>
+          
+            <tr>
+              <td><img src="https://cf.shopee.com.br/file/00e96679281609af79a03af2e2905092" class="test"></td>
+              <td>Bleu de Chanel</td>
+              <td>Chanel</td>
+              <td>Amadeirado Aromático</td>
+              <td>2010</td>
+              <td>R$499,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://fraguru.com/mdimg/perfume/375x500.383.jpg" class="test"></td>
+              <td>Boss Bottled</td>
+              <td>Hugo Boss</td>
+              <td>Amadeirado Especiado</td>
+              <td>1998</td>
+              <td>R$319,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://a-static.mlcdn.com.br/450x450/yves-saint-laurent-l-homme-edt-100-ml-perfume-masculino/epocacosmeticos-leblon/d3ec6bea0c4011eb96fa4201ac18502e/9803b3e11d8f2331e5f4a3fe5a01b30a.jpeg"
+                  class="test"></td>
+              <td>L'Homme</td>
+              <td>Yves Saint Lauren</td>
+              <td>Amadeirado Floral</td>
+              <td>2006</td>
+              <td>R$529,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="http://d2r9epyceweg5n.cloudfront.net/stores/002/004/735/products/bvlgari-man-in-black-perfume-sho1-c5cb69d62dc5e1045716555836134228-640-0.jpg"
+                  class="test"></td>
+              <td>Bvlgari Man In Black</td>
+              <td>Bvlgari</td>
+              <td>Âmbar Floral</td>
+              <td>2014</td>
+              <td>R$539,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://www.sephora.com.br/dw/image/v2/BFJC_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/pt_BR/dwea3c1af8/images/hi-res-BR/8435415015486%20(3)_1500px.jpg?sw=556&sh=680&sm=fit"
+                  class="test"></td>
+              <td>Ultra Male</td>
+              <td>Jean Paul Gaultier</td>
+              <td>Âmbar Fougére</td>
+              <td>2015</td>
+              <td>R$329,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://epocacosmeticos.vteximg.com.br/arquivos/ids/403988-500-500/joop-homme-eau-de-toilette-joop-perfume-masculino-75ml--1-.jpg?v=637364809906430000"
+                  class="test"></td>
+              <td>Joop! Homme</td>
+              <td>Joop!</td>
+              <td>Âmbar Fougére</td>
+              <td>1989</td>
+              <td>R$129,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://epocacosmeticos.vteximg.com.br/arquivos/ids/207236-320-320/animale-for-men-eau-de-toilette-animale-perfume-masculino-200ml.jpg?v=635996163344830000"
+                  class="test"></td>
+              <td>Animale for Men</td>
+              <td>Animale</td>
+              <td>Âmbar Especiado</td>
+              <td>1993</td>
+              <td>R$99,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://epocacosmeticos.vteximg.com.br/arquivos/ids/274707-320-320/armani-code75ml1.jpg?v=636700029579470000"
+                  class="test"></td>
+              <td>Armani Code</td>
+              <td>Giorgio Armani</td>
+              <td>Âmbar Especiado</td>
+              <td>2004</td>
+              <td>R$409,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://cf.shopee.com.br/file/425d8d5593c0e94d60382ffca9914242" class="test"></td>
+              <td>Prada L'Homme Absolu</td>
+              <td>Prada</td>
+              <td>Âmbar Amadeirado</td>
+              <td>2018</td>
+              <td>R$699,00</td>
+            </tr>
+            <tr>
+              <td><img
+                  src="https://azperfumes.vteximg.com.br/arquivos/ids/165214-540-460/John-Varvatos-Dark-Rebel-De-John-Varvatos-Eau-De-Toilette-Masculino.jpg?v=636622542514600000"
+                  class="test"></td>
+              <td>Dark Rebel</td>
+              <td>John Varvatos
+              <td>Âmbar Amadeirado</td>
+              <td>2015</td>
+              <td>R$499,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://fraguru.com/mdimg/perfume/375x500.54388.jpg" class="test"></td>
+              <td>Ana Furtado</td>
+              <td>Jequiti
+              </td>
+              <td>Floral </td>
+              <td>2018</td>
+              <td>R$39,00</td>
+            </tr>
+            <tr>
+              <td><img src="https://http2.mlstatic.com/D_NQ_NP_700850-MLB50017923287_052022-O.jpg" class="test"></td>
+              <td>Far Away</td>
+              <td>Avon
+              </td>
+              <td>Âmbar Floral</td>
+              <td>1994</td>
+              <td>R$79,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgb(14, 127, 44); color: white;">
+        © 2023 Copyright: Data SW.
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        $("#gfg").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#geeks tr").filter(function () {
+            $(this).toggle($(this).text()
+              .toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+
+</body>
+</html>
+
+
+
+

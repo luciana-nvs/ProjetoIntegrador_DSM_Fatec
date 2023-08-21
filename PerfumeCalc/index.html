@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>DataSW</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/Home/index.html">
+        <img src="/Imagens/logomini.png" alt="Logo" width="90">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Home/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Login/index.html">Login</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/Quiz/index.html">Questionário de Perfume</a></li>
+              <li><a class="dropdown-item" href="/PerfumeCalc/index.html">Calculadora de perfume</a></li>
+              <li><a class="dropdown-item" href="/Search/index.html">Pesquisa de perfume</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Sobre/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/FaleConosco/faConosco.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <section>
+    <div class="wrapper">
+      <h1>Descubra qual a duração do seu perfume!</h1>
+      <h5>Calcule quantos dias você levará para terminar um frasco de perfume.</h5>
+
+      
+      <ul class="measurements">
+        <h6>Medidas</h6>
+        <li>0.5 oz = 15ml</li>
+        <li>1 oz = 30ml</li>
+        <li>1.7 oz = 50ml</li>
+        <li>3.4 oz = 100ml</li>
+      </ul>
+
+      <div class="calc">
+        <p>
+          <label for="bottleSize">Insira quantos ml seu perfume possui:</label>
+          <input class="input-lg" title="Size of perfume" type="text" id="bottleSize" />
+        </p>
+        <p>
+          <label for="spraysPerDay">Quantos borrifadas você utiliza por dia:</label>
+          <input class="input-lg" title="How many sprays per day" type="text" id="spraysPerDay" />
+        </p>
+        <div class="text-center">
+          <button class="btn btn-primary btn-success calculate-btn" onclick="calculatePerfume();">Calcular</button>
+        </div>
+       
+        <div id="result" class="result"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgb(14, 127, 44); color: white;">
+      © 2023 Copyright: Data SW.
+  </footer>
+
+  <script src="script_Calc.js"></script>
+  
+
+</body>
+</html>
