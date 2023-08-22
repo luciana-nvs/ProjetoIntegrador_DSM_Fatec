@@ -39,11 +39,12 @@ section {
 }
 
 .wrapper {
-  width: 60%;
+  width: 70%;
   height:500px;
   background-color:white;
   margin-top: 20px;
-  margin-left: 280px;
+  margin-left:150px;
+  margin-right: 100px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;

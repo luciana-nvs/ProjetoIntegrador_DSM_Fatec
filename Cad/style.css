@@ -26,7 +26,8 @@ a{
 .cadastro{
     display: flex;
     flex-direction: column;
-    min-height: 150vh; /* Make sure the container takes up at least the viewport height */
+    height: 170vh;
+    width: 100vw; /* Make sure the container takes up at least the viewport height */
     justify-content: space-between;
   }
 
@@ -38,7 +39,8 @@ a{
     margin-top: 200px; /* Adjust the margin-top to your desired value */
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 3%;
+    box-shadow: 3px 3px 1px 1px #00000060;
     width: 35%;
 }
 
@@ -51,6 +53,7 @@ fieldset{
 legend{
     border: 1px solid #ffffff;
     padding: 10px;
+    margin-bottom: 20px;
     text-align: center;
     background-color: 141, 185, 121;
     border-radius: 8px;

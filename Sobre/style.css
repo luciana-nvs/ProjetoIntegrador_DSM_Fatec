@@ -37,25 +37,12 @@ a{
   }
 
 h3{
-	padding-top: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	text-align: center;
   }
-  
-  .image-container {
 
-	max-width: 20%;
-  }
-  
-  .image-container img {
-	display: block;
-	margin-left: 90px;
-	width: 200px;
-	max-height: 400px;
-	height: 200px;
-  }
-  
-  
-  .content {
-	margin: 40px 0 10px 60px ; /* Add margin to the top and bottom */ 
-  }
-  
+ .container{
+	height: 100vh;
+  	width: 100vw;
+ } 
